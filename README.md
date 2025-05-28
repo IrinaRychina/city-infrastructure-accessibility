@@ -19,7 +19,7 @@ Python, Pandas, Folium, OpenStreetMap
 ## 🚧 Project Progress
 
 - [x] Idea formulated  
-- [ ] Initial Overpass API query created  
+- [x] Initial Overpass API query created  
 - [ ] Data processing and filtering  
 - [ ] Visualization of accessible locations on the map  
 - [ ] Analysis and insights  
