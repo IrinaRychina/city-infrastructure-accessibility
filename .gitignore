@@ -1,0 +1,9 @@
+# Игнорировать реальные и временные данные
+data/
+*.csv
+*.json
+
+# Но оставить sample
+!sample_data/wheelchair_sample.csv
+
+.idea/
