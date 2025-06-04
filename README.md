@@ -16,20 +16,32 @@ This project explores how accessible urban infrastructure (such as buildings, pu
 ## Technologies:
 Python, Pandas, Folium, OpenStreetMap
 
-## 🚧 Project Progress
+## Project Progress
 
 - [x] Idea formulated  
 - [x] Initial Overpass API query created  
-- [ ] Data processing and filtering  
-- [ ] Visualization of accessible locations on the map  
+- [x] Create development environment in Docker 
+- [ ] Data processing and filtering
 - [ ] Analysis and insights  
 - [ ] Presentation of results  
 
-### 💡 Future Ideas
+### Future Ideas
 
 - Add filtering by object type (e.g. restaurants, schools, pharmacies)
 - Evaluate accessibility by district and create a ranking
 - Compare accessibility across different cities
 
-## 📌 Пример карты
+## Пример карты
 ![Map Screenshot](./screenshots/map_example.png)
+
+## Technical Setup & Usage Guide
+
+To build the Docker image, navigate to the project directory on your local machine and run:
+> docker build -t city-accessibility .  
+
+To execute the script inside the container, run:
+> docker run --rm city-accessibility  
+
+For debugging or accessing output files, you can mount the local data folder:
+> docker run --rm -v "${pwd}/data:/app/data" city-accessibility
+This will create a file named wheelchair_accessible.csv in your local data directory.

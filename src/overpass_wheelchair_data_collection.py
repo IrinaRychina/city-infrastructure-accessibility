@@ -15,6 +15,7 @@ project_root = Path(__file__).resolve().parent.parent
 data_dir = project_root / "data"
 data_dir.mkdir(exist_ok=True)
 csv_path = data_dir / "wheelchair_accessible.csv"
+# print("CSV path:", csv_path)
 
 try:
     with open(csv_path, mode="w", encoding="utf-8", newline="") as file:
