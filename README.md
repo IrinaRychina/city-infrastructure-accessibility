@@ -10,11 +10,10 @@ This project explores how accessible urban infrastructure (such as buildings, pu
 
 ## Planned Features:
 - Data collection via Overpass API
-- Mapping accessible locations
 - Insights into the state of urban accessibility
 
 ## Technologies:
-Python, Pandas, Folium, OpenStreetMap
+Python, OpenStreetMap
 
 ## Project Progress
 
@@ -44,4 +43,5 @@ To execute the script inside the container, run:
 
 For debugging or accessing output files, you can mount the local data folder:
 > docker run --rm -v "${pwd}/data:/app/data" city-accessibility
+
 This will create a file named wheelchair_accessible.csv in your local data directory.
